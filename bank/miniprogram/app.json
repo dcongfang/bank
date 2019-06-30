@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/invote/invote",
+    "pages/index/index",
+    "pages/search/search",
+    "pages/xyk/xyk",
+    "pages/life/life",
+    "pages/mine/mine"
+  ],
+  "window": {
+    "navigationStyle": "custom"
+  },
+  "networkTimeout": {
+    "request": 3000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "tabBar": {
+    "color": "#343434",
+    "selectedColor": "#2fcec3",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/shouye.png",
+        "selectedIconPath": "images/shouye-active.png"
+      },
+      {
+        "pagePath": "pages/invote/invote",
+        "text": "投资",
+        "iconPath": "images/invote.png",
+        "selectedIconPath": "images/invote-active.png"
+      },
+      {
+        "pagePath": "pages/xyk/xyk",
+        "text": "信用卡",
+        "iconPath": "images/qianbao.png",
+        "selectedIconPath": "images/xyk-active.png"
+      },
+      {
+        "pagePath": "pages/life/life",
+        "text": "生活",
+        "iconPath": "images/life.png",
+        "selectedIconPath": "images/life-active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

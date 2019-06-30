@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="header">
+    <view class="position">
+      <image src="../../images/position.png" style="width:60rpx;height:60rpx;" />
+      <span>南昌市</span>
+    </view>
+    <view class="searchInp">
+      <input type="text" value="" />
+    </view>
+  </view>
+</view>
+

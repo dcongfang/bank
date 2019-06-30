@@ -1,0 +1,162 @@
+<view class="header">
+  <!-- 轮播图 -->
+  <view class="headerImg">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#2eac94" circular="{{circular}}">
+      <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+        <swiper-item>
+          <navigator>
+            <image src="{{item}}" mode="widthFix" />
+          </navigator>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 搜索框 -->
+  <view class="searchInput">
+    <!-- 二维码图片 -->
+    <view class="qrc" bindtap="getQRCode">
+      <image src="../../images/qrc.png" style="width:40rpx;height:40rpx;" />
+    </view>
+    <!--输入框  -->
+    <view class="input">
+      <image style="width:40rpx;height:40rpx;" src="../../images/search.png" />
+      <input type="text" placeholder="农银快e付" id="id" bindtap="handletap" />
+      <image src="../../images/microf.png" style="width:40rpx;height:40rpx;"/>
+    </view>
+    <!-- 耳机图片 -->
+    <view class="erji">
+      <image style="width:60rpx;height:60rpx;" src="../../images/erji.png" />
+    </view>
+    <!-- 信封图片 -->
+    <view class="xf">
+      <image style="width:60rpx;height:60rpx;" src="../../images/xf.png" />
+    </view>
+  </view>
+  <!-- 文字标题 -->
+    <view class="title">
+        <text wx:if="{{time >= 6 && time < 11}}">早上好</text>
+        <text wx:elif="{{time >= 11 && time <= 13}}">中午好</text>
+        <text wx:elif="{{time >= 14 && time < 18}}">下午好</text>
+        <text wx:else>晚上好</text>
+    </view>
+  <!-- 图标列表 -->
+  <view class="menu">
+    <view class="good-list" >
+        <view class="good-item" wx:for="{{actListData}}" wx:key="{{index}}">
+          <view class="item-center" bindtap="bindQueTap">
+            <image src="{{item.pic}}" class="listicon"></image>
+            <text class="listtext">{{item.words}}</text>
+          </view>
+        </view>
+    </view>
+  </view>
+  <view class="Img-navigitor">
+    <navigator>
+      <image mode="widthFix" src="../../images/3.jpeg" />
+    </navigator>
+  </view>
+  <view class="container">
+    <view class="text-content">
+      <text>金融小秘书  千事万事都靠它</text>
+      <view class="tupiao-text">
+        <view class="one-text">
+          <image mode="widthFix" src="../../images/lifejf.png" style="width:20rpx;height:20rpx;" />
+          <text>缴费提醒</text>
+        </view>
+        <view class="two-text">
+          <image mode="widthFix" src="../../images/qianbao.png" style="width:20rpx;height:20rpx;" />
+          <text>还款提醒</text>
+        </view>
+        <view class="three-text">
+          <image mode="widthFix" src="../../images/time.png" style="width:20rpx;height:20rpx;" />
+          <text>个人提醒</text>
+        </view>
+      </view>
+    </view>
+    <view class="go">
+      <image mode="widthFix" src="../../images/go.png" />
+    </view>
+  </view>
+  <view class="introduce">
+    <view class="introduce-text" style="font-weight:bold;">为您推荐</view>
+    <swiper indicator-dots="{{indicatorDots}}" indicator-active-color="#2eac94">
+       <swiper-item>
+            <view class="specialLists">
+              <view class="specials">
+                <view class="specail1-title">
+                  招商产业债券
+                </view>
+                <view class="persent">
+                  0.86%
+                </view>
+                <view class="specail1-text">
+                  月涨幅
+                </view>
+              </view>
+              <view class="specials">
+                <view class="specail1-title">
+                  融通通泰保本
+                </view>
+                <view class="persent">
+                  0.77%
+                </view>
+                <view class="specail1-text">
+                  季涨幅
+                </view>
+              </view>
+              <view class="specials">
+                <view class="specail1-title">
+                  农银红利日结A
+                </view>
+                <view class="persent">
+                  2.48%
+                </view>
+                <view class="specail1-text">
+                  七日年化收益率
+                </view>
+              </view>
+            </view>
+        </swiper-item>
+        <swiper-item>
+            <view class="specialLists">
+              <view class="specials">
+                <view class="specail1-title">
+                  招商产业债券
+                </view>
+                <view class="persent">
+                  0.86%
+                </view>
+                <view class="specail1-text">
+                  月涨幅
+                </view>
+              </view>
+              <view class="specials">
+                <view class="specail1-title">
+                  融通通泰保本
+                </view>
+                <view class="persent">
+                  0.77%
+                </view>
+                <view class="specail1-text">
+                  季涨幅
+                </view>
+              </view>
+              <view class="specials">
+                <view class="specail1-title">
+                  农银红利日结A
+                </view>
+                <view class="persent">
+                  2.48%
+                </view>
+                <view class="specail1-text">
+                  七日年化收益率
+                </view>
+              </view>
+            </view>
+        </swiper-item>
+    </swiper>
+
+  </view>
+</view>
+
+

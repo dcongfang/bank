@@ -1,0 +1,115 @@
+
+ <view class="container">
+    <!-- 搜索框 -->
+  <view class="searchInput">
+    <!-- 二维码图片 -->
+    <view class="qrc">
+      <image src="../../images/qrc.png" style="width:40rpx;height:40rpx;" />
+    </view>
+    <!--输入框  -->
+    <view class="input">
+      <image style="width:40rpx;height:40rpx;" src="../../images/search.png" />
+      <input type="text" placeholder="农银快e付" id="id" bindtap="handletap" />
+      <image src="../../images/microf.png" style="width:40rpx;height:40rpx;"/>
+    </view>
+    <!-- 耳机图片 -->
+    <view class="erji">
+      <image style="width:60rpx;height:60rpx;" src="../../images/erji.png" />
+    </view>
+    <!-- 信封图片 -->
+    <view class="xf">
+      <image style="width:60rpx;height:60rpx;" src="../../images/xf.png" />
+    </view>
+  </view>
+  <!-- 图标列表 -->
+  <view class="iconList">
+      <swiper class="swiper-box" indicator-dots="{{true}}" indicator-active-color="#2eac94">
+          <swiper-item>
+              <view class="icons" wx:for="{{iconItems}}" wx:key="index">
+                  <view class="iconImage">
+                      <image src="{{item.imgUrl}}" style="width:60rpx;height:60rpx;"/>
+                      <text>{{item.title}}</text>
+                  </view>
+              </view>
+          </swiper-item>
+          <swiper-item>
+              <view class="icons" wx:for="{{iconItems}}" wx:key="index">
+                  <view class="iconImage">
+                      <image mode="widthFix" src="{{item.imgUrl}}" style="width:60rpx;height:60rpx;"/>
+                      <text>{{item.title}}</text>
+                  </view>
+              </view>
+          </swiper-item>
+      </swiper>
+  </view>
+  <view class="twoImg">
+    <view class="ximg">
+      <image style="width:100%;height:200rpx" src="../../images/4.jpg" />
+    </view>
+    <view class="goImg">
+      <image src="../../images/go.png" />
+    </view>
+  </view>
+  <view class="title-text">
+    <text>活期投资</text>
+  </view>
+  <view class="two-models">
+    <view class="one-model">
+      <view class="img-title">
+        <image mode="widthFix" src="../../images/ny.png" style="width:30rpx;height:30rpx;" />
+        <text>农银快e宝</text>
+      </view>
+      <view class="span-text">货币基金1分起投</view>
+      <view class="persent">2.48%</view>
+      <view class="span1-text">七日年化收益率</view>
+    </view>
+     <view class="two-model">
+      <view class="img-title">
+        <image mode="widthFix" src="../../images/ny.png" style="width:30rpx;height:30rpx;" />
+        <text>农银快e宝</text>
+      </view>
+      <view class="span-text">货币基金1分起投</view>
+      <view class="persent">2.48%</view>
+      <view class="span1-text">七日年化收益率</view>
+    </view>
+  </view>
+  <view class="fixed-deposit">
+    <view class="fixed">
+      <text>定期投资</text>
+    </view>
+    <scroll-view scroll-x>
+        <view class="a">
+          <view class="b">"金钥匙的汇丰"2019年第309期人民币结构线暑假寒假哈德巨大"</view>
+          <view class="c">3.4-3.5%</view>
+          <view class="d">365</view>
+        </view>
+        <view class="a">
+          <view class="b">"金钥匙的汇丰"2019年第309期人民币结构线暑假寒假哈德巨大"</view>
+          <view class="c">3.4-3.5%</view>
+          <view class="d">365</view>
+        </view>
+        <view class="a">
+          <view class="b">"金钥匙的汇丰"2019年第309期人民币结构线暑假寒假哈德巨大"</view>
+          <view class="c">3.4-3.5%</view>
+          <view class="d">365</view>
+        </view>
+    </scroll-view>
+  </view>
+  <view class="invote-Img">
+    <image src="{{imgUrl}}" style="width:100%;height:100%;"/>
+  </view>
+  <view class="information">
+    <view class="text1">资讯</view>
+    <view class="img1"><image src="../../images/right.png" style="width:70rpx;height:70rpx;"/></view>
+  </view>
+  <view class="content-Image1" wx:for="{{Lists}}" wx:key="{{index}}">
+    <view class="title-text1">
+      <text class="t1">{{item.title1}}</text>
+      <text class="t2">{{item.title2}}</text>
+    </view>
+    <view class="img123">
+      <image src="{{item.imgUrl}}" style="width:100%;height:100%;"/>
+    </view>
+  </view>
+</view>
+
