@@ -1,1 +1,160 @@
-/* pages/life/life.wxss */
+.container {
+  width: 750rpx;
+  height: 1800rpx;
+}
+.header{
+  margin-top: -120rpx;
+  display: flex;
+  height: 100rpx;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+.position{
+  width: 18%;
+  height: 50rpx;
+  justify-content: center;
+  align-items: center;
+  font-size:26rpx;
+  margin-left: 10rpx;
+  margin-bottom: 0;
+}
+.searchInp{
+  width: 62%;
+  height: 50rpx;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10rpx;
+  display: flex;
+  font-size: 30rpx;
+  margin-bottom: 0;
+  border-radius: 30rpx;
+  border: 1px solid #ffffff;
+  background-color: #f3f6f6;
+  color:#b5b8b8;
+}
+.searchInp .search-icon{
+  margin-left: 20rpx;
+}
+.searchInp input{
+  width: 100%;
+  height: 50rpx;
+  margin-bottom: 0;
+}
+.searchInp .microf{
+  margin-right: 20rpx;
+}
+.dingdan{
+  flex:1;
+  text-align: center;
+  display: block;
+  font-size: 30rpx;
+}
+.dingdan image,span{
+  vertical-align: middle;
+}
+.iconList{
+  margin-top: 100rpx;
+  box-sizing: border-box;
+  flex-wrap:wrap;
+  display: flex;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0 25rpx;
+  height: 300rpx;
+  width: 100%;
+}
+.iconList .icon{
+  width: 20%;
+  height: 45%;
+  margin-bottom: 15rpx;
+}
+.iconList .icon image{
+  margin-top: 0;
+}
+.iconList .icon text{
+  margin-top: 15rpx;
+  font-size: 28rpx;
+  margin-bottom: 0;
+  display: block;
+  white-space: nowrap;
+}
+.content-img{
+  margin-top: 20rpx;
+  width: 710rpx;
+  height: 300rpx;
+  padding: 0 20rpx;
+}
+.navigation{
+  margin-top: 40rpx;
+  width: 45%;
+  height: 60rpx;
+  font-size: 36rpx;
+  font-weight: 500;
+  display: flex;
+  padding-left: 20rpx;
+}
+.navigation>text:not(:first-child){
+  margin-left: 40rpx;
+}
+text.active{
+  /* border-bottom: green; */
+  /* border: 1px solid green; */
+  color: red;
+  transform: scale(1.2);
+}
+.shopping{
+  margin-top: 20rpx;
+  width: 710rpx;
+  padding-left:20rpx;
+  padding-right: 20rpx;
+  height: 700rpx;
+}
+.shopping .swipers{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+  vertical-align: middle;
+  text-align: center;
+}
+.shopping .swipers .flex-swiper{
+  height: 30%;
+  width: 45%;
+  margin-left: 20rpx;
+}
+.shopping .swipers .flex-swiper .goodItem{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10rpx;
+}
+.shopping .swipers .flex-swiper .goodItem image{
+  margin-top: 0;
+  height: 75%;
+  width: 100%;
+}
+.shopping .swipers .flex-swiper .goodItem text{
+  height: 25%;
+  margin-bottom: 0;
+  text-align: left;
+  font-size: 30rpx;
+}
+.server{
+  margin-top: 10rpx;
+  padding: 0 20rpx;
+  width: 710rpx;
+  height: 60rpx;
+  font-size: 34rpx;
+  font-weight: 600;
+}
+.tupian{
+  height: 120rpx;
+  width: 710rpx;
+  padding: 0 20rpx;
+  margin-top: 10rpx;
+  display: inline-block;
+}
+.tupian .secondImg{
+  margin-left:30rpx;
+}

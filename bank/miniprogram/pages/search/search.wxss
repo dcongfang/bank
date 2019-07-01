@@ -10,7 +10,7 @@ page {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100rpx; 
+    margin-top: 30rpx; 
 }
 .search-input {
     width: 600rpx;

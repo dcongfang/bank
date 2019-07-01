@@ -1,14 +1,16 @@
 {
   "pages": [
+    "pages/life/life",
     "pages/invote/invote",
     "pages/index/index",
     "pages/search/search",
-    "pages/xyk/xyk",
-    "pages/life/life",
     "pages/mine/mine"
   ],
   "window": {
-    "navigationStyle": "custom"
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "银行小助手",
+    "navigationBarTextStyle": "black"
   },
   "networkTimeout": {
     "request": 3000,
@@ -31,12 +33,6 @@
         "text": "投资",
         "iconPath": "images/invote.png",
         "selectedIconPath": "images/invote-active.png"
-      },
-      {
-        "pagePath": "pages/xyk/xyk",
-        "text": "信用卡",
-        "iconPath": "images/qianbao.png",
-        "selectedIconPath": "images/xyk-active.png"
       },
       {
         "pagePath": "pages/life/life",

@@ -20,7 +20,7 @@ page {
     height: 100%;
 }
 .searchInput {
-    margin-top: -380rpx;
+    margin-top: -390rpx;
     /* position: absolute; */
     display: flex;
     align-items: center;

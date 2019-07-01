@@ -16,12 +16,12 @@ page {
     position: fixed;
     background-color: #fff;
 }
-.searchInput::after {
+/* .searchInput::after {
     content: '';
     display: block;
     overflow: hidden;
     clear: both;
-}
+} */
 .qrc {
     flex:1;
     display: flex;
