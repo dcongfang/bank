@@ -49,9 +49,9 @@
   </view>
   <view class="server">精选服务</view>
   <view class="tupian">
-    <image src="../../images/tm.jpg" style="height:100%;width:47%"/>
-    <image class="secondImg" src="../../images/wykl.jpg" style="height:100%;width:47%"/>
+    <image src="https://7875-xuanxuan-3i0wm-1259123286.tcb.qcloud.la/8vlVsRjGDu8Sb4995ef618d05163452d49df9cedade3.jpg?sign=15123f8bf2f9a7345047fa9ebf9fc0e8&t=1562199999" style="height:100%;width:47%"/>
+    <image class="secondImg" src="https://7875-xuanxuan-3i0wm-1259123286.tcb.qcloud.la/Bbcdqke0ufiA026a198313822be2de18d43163cbbd4a.jpg?sign=926075e18a7782ddc2b8dd85b9e6639d&t=1562200052" style="height:100%;width:47%"/>
   </view>
-  <image src="../../images/jd.png"  style="height:100rpx;width:700rpx;padding-left:20rpx;padding-right:30rpx;"/>
+  <image src="https://7875-xuanxuan-3i0wm-1259123286.tcb.qcloud.la/sCIynUXcPibZ47f61e540b342c8af9b3647b7c793319.jpg?sign=fcc55b02c43e083288a750562ee7ea52&t=1562200081"  style="height:120rpx;width:700rpx;padding-left:20rpx;padding-right:20rpx;"/>
 </view>
 

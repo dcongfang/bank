@@ -109,7 +109,7 @@ text.active{
   width: 710rpx;
   padding-left:20rpx;
   padding-right: 20rpx;
-  height: 700rpx;
+  height: 800rpx;
 }
 .shopping .swipers{
   height: 100%;
@@ -156,5 +156,5 @@ text.active{
   display: inline-block;
 }
 .tupian .secondImg{
-  margin-left:30rpx;
+  margin-left:20rpx;
 }
