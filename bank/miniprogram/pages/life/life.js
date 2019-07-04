@@ -1,4 +1,5 @@
 // pages/life/life.js
+import QQMapWX from '../../util';
 const db = wx.cloud.database();
 const dcf = db.collection('bank-img');
 Page({
@@ -60,6 +61,7 @@ Page({
     interval: 3000,
     duration: 300,
     status: 0,
+    city: '',
     currentIndex: 0,
     shopImg: [
       [
@@ -142,6 +144,31 @@ Page({
     ]
     ]
   },
+  showPosition: function() {
+    let that = this
+    wx.getLocation({
+      type: 'gcj02',
+      success: (res) => {
+        const qqMapSdk = new QQMapWX({
+          key:'DHNBZ-2ZLKK-T7IJJ-AXSQW-WX5L6-A6FJZ'
+        })
+        qqMapSdk.reverseGeocoder({
+          location: {
+            latitude: res.latitude,
+            longitude: res.longitude
+          },
+          success: (res) => {
+            // console.log(res.result.address_component.city)
+            that.setData({
+              city: res.result.address_component.city
+            })
+            // this.location = res.result
+            // .formatted_addresses.recommend
+          }
+        }) 
+      }
+    })
+  },
   swiperTab: function(e) {
     // console.log(e);
     this.setData({
@@ -166,14 +193,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-   
+    this.showPosition()
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    
   },
 
   /**

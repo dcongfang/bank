@@ -2,7 +2,7 @@
   <view class="header">
     <view class="position">
       <image src="../../images/position.png" style="width:40rpx;height:40rpx;" />
-      <span>南昌市</span>
+      <span>{{city}}</span>
     </view>
     <view class="searchInp">
       <icon class="search-icon" type="search" size="22"  /> 

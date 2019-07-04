@@ -48,5 +48,10 @@
       }
     ]
   },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息用于当前位置的展示"
+    }
+  },
   "sitemapLocation": "sitemap.json"
 }
