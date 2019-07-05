@@ -5,14 +5,40 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    show: true,
+    nickName: '',
+    avatarUrl: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
+  bindGetUserInfo() {
+    var that = this
+    wx.showModal({
+      title: '提示',
+      content: '确认是否授权',
+      success (res) {
+        if (res.confirm) {
+          wx.getUserInfo({
+            success: function (res) {
+              // console.log(res)
+              that.setData({
+                nickName: res.userInfo.nickName,
+                avatarUrl: res.userInfo.avatarUrl,
+                show: false
+              })
+             },
+       })  
+        } else if(res.cancel) {
+          
+        }
+      }
+    })
+  
+  },
   onLoad: function (options) {
-
+    
   },
 
   /**

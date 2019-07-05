@@ -71,7 +71,7 @@ page {
 }
 .iconList {
     width: 750rpx;
-    height: 400rpx;
+    height: 350rpx;
     float: left;
     margin-top: 120rpx;
 }

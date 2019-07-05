@@ -1,5 +1,81 @@
 <view class="container">
+  <view class="header-img">
+    <view class="email">
+      <image src="../../images/xfeng.png" style="height:100%;width:100%;z-index: 9999;"/>
+    </view>
+    <view class="microf">
+      <image src="../../images/ear.png" style="height:100%;width:100%;z-index: 9999;"/>
+    </view>
+  </view>
   <view class="header">
-    
+    <view class="avatar-userInfo">
+      <view class="avatar">
+        <image wx:if="{{show}}" src="../../images/avatar.png" style="height:100rpx;width:100rpx;margin-buttom:20rpx;" />
+        <image wx:else src="{{avatarUrl}}" style="height:100rpx;width:100rpx;margin-buttom:20rpx;" />
+      </view>
+      <view class="userInfo">
+        <button open-type="getUserInfo" bindtap="bindGetUserInfo" wx:if="{{show}}">登录</button>
+        <button wx:else>{{nickName}}</button>
+        <view class="qiandao">
+          <text>签到有礼 ></text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="mine">
+    <view class="mine-life">
+      <view class="tupian">
+        <image src="../../images/wdezh.png" mode="widthFix" style="width:70%;height:70%;"/>
+      </view>
+      <view class="title-text">我的账号</view>
+      <view class="icon">
+        <image src="../../images/right.png" mode="widthFix" style="width:70%;height:70%;"/>
+      </view>
+    </view>
+     <view class="mine-life">
+      <view class="tupian">
+        <image src="../../images/zf.png" mode="widthFix" style="width:70%;height:70%;"/>
+      </view>
+      <view class="title-text">支付</view>
+      <view class="icon">
+        <image src="../../images/right.png" mode="widthFix" style="width:70%;height:70%;"/>
+      </view>
+    </view>
+     <view class="mine-life">
+      <view class="tupian">
+        <image src="../../images/wde.png" mode="widthFix" style="width:70%;height:70%;"/>
+      </view>
+      <view class="title-text">我的</view>
+      <view class="icon">
+        <image src="../../images/right.png" mode="widthFix" style="width:70%;height:70%;"/>
+      </view>
+    </view>
+     <view class="mine-life">
+      <view class="tupian">
+        <image src="../../images/wdzc.png" mode="widthFix" style="width:70%;height:70%;"/>
+      </view>
+      <view class="title-text">我的资产</view>
+      <view class="icon">
+        <image src="../../images/right.png" mode="widthFix" style="width:70%;height:70%;"/>
+      </view>
+    </view>
+     <view class="mine-life">
+      <view class="tupian">
+        <image src="../../images/wdjf.png" mode="widthFix" style="width:70%;height:70%;"/>
+      </view>
+      <view class="title-text">我的积分</view>
+      <view class="icon">
+        <image src="../../images/right.png" mode="widthFix" style="width:70%;height:70%;"/>
+      </view>
+    </view>
+     <view class="mine-life">
+      <view class="tupian">
+        <image src="../../images/shez.png" mode="widthFix" style="width:70%;height:70%;"/>
+      </view>
+      <view class="title-text">设置</view>
+      <view class="icon">
+        <image src="../../images/right.png" mode="widthFix" style="width:70%;height:70%;"/>
+      </view>
+    </view>
   </view>
 </view>

@@ -1,1 +1,126 @@
 /* pages/mine/mine.wxss */
+.container{
+  width: 750rpx;
+  height: 1100rpx;
+  background: #e6e6e6;
+}
+.header-img{
+  float: right;
+  margin-top: 30rpx;
+  height: 60rpx;
+  width: 100%;
+  
+}
+.microf{
+  float: right;
+  margin-right: 30rpx;
+  width: 60rpx;
+  height: 100%;
+  z-index: 9999;
+}
+.email{
+  float: right;
+  margin-right: 30rpx;
+  width: 60rpx;
+  height: 100%;
+  z-index: 9999;
+}
+.header{
+  height: 300rpx;
+  width: 100%;
+  background: -webkit-linear-gradient(left, #1d1d1d, #3e3e3e, #3c3c3c, #282828);
+}
+.avatar-userInfo{
+  /* margin-top: 20rpx; */
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  box-sizing: border-box;
+  /* padding: 0 30rpx; */
+  height: 200rpx;
+  padding:50rpx 0;
+}
+.avatar{
+  width: 100rpx;
+  height: 60%;
+  margin-left: 30rpx;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+.userInfo{
+  height: 60%;
+  padding: 0 10rpx;
+  flex:1;
+  text-align: left;
+  margin-bottom: 0;
+}
+.userInfo button{
+  width: 25%;
+  color: #ffffff;
+  margin-left: 0;
+  font-size: 30rpx;
+  background-color: transparent;
+  /* border: 1px solid transparent; */
+}
+button::after{ border: none; }
+.userInfo .qiandao{
+  color: #896747;
+  font-size: 22rpx;
+  margin-left: 30rpx;
+}
+.mine{
+  margin-top: 20rpx;
+  width: 100%;
+  height: 700rpx;
+}
+.mine-life{
+  /* margin-bottom: 20rpx; */
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  border-bottom-style: solid;
+  border: 1px solid #e6e6e6;
+  width: 100%;
+  background: #ffffff;
+  /* vertical-align: middle; */
+  /* text-align: center; */
+  align-items: center;
+}
+.tupian{
+  width: 100rpx;
+  height: 100%;
+  text-align: center;
+  margin-top: 30rpx;
+  align-items: center;
+  vertical-align: middle;
+  margin-left: 20rpx;
+}
+.title-text{
+  margin-top: 40rpx;
+  color: black;
+  font-size: 35rpx;
+  margin-left: 20rpx;
+  width: 70%;
+  height: 100%;
+  text-align: left;
+  align-items: center;
+  /* align-items: center; */
+  vertical-align: middle;
+}
+.icon{
+  margin-top: 40rpx;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  margin-right: 20rpx;
+}
+.mine>.mine-life:nth-of-type(1){
+  margin-bottom: 30rpx;
+}
+.mine>.mine-life:last-child{
+  margin-top: 50rpx;
+}
