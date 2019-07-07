@@ -11,7 +11,7 @@
     <view class="avatar-userInfo">
       <view class="avatar">
         <image wx:if="{{show}}" src="../../images/avatar.png" style="height:100rpx;width:100rpx;margin-buttom:20rpx;" />
-        <image wx:else src="{{avatarUrl}}" style="height:100rpx;width:100rpx;margin-buttom:20rpx;" />
+        <image wx:else src="{{avatarUrl}}"  bindtap='previewImg' style="height:100rpx;width:100rpx;margin-buttom:20rpx;" />
       </view>
       <view class="userInfo">
         <button open-type="getUserInfo" bindtap="bindGetUserInfo" wx:if="{{show}}">登录</button>
@@ -27,7 +27,7 @@
       <view class="tupian">
         <image src="../../images/wdezh.png" mode="widthFix" style="width:70%;height:70%;"/>
       </view>
-      <view class="title-text">我的账号</view>
+      <view class="title-text">我的账户</view>
       <view class="icon">
         <image src="../../images/right.png" mode="widthFix" style="width:70%;height:70%;"/>
       </view>
