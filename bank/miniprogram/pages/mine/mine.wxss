@@ -99,7 +99,7 @@ button::after{ border: none; }
   margin-left: 20rpx;
 }
 .title-text{
-  margin-top: 40rpx;
+  margin-top: 50rpx;
   color: black;
   font-size: 35rpx;
   margin-left: 20rpx;
@@ -111,7 +111,7 @@ button::after{ border: none; }
   vertical-align: middle;
 }
 .icon{
-  margin-top: 40rpx;
+  margin-top: 50rpx;
   height: 100%;
   align-items: center;
   text-align: center;
